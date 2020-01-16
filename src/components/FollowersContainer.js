@@ -11,17 +11,18 @@ const FollowersContainer = (props) => {
             <div className="row">
                 <div className="col-12 col-sm-8 col-lg-5">
                     <div className="list-group">
+                        {twitterFollowers && twitterFollowers.length > 0 &&
                         <InfiniteScroll
                             initialLoad={false}
                             children={twitterFollowers}
                             pageStart={0}
                             loadMore={loadMore}
                             hasMore={cursor !== 0}
-                            loader={<div className="loader" key={0}>Loading ...</div>}
+                            loader={<div className="loader">Loading more items...</div>}
                             useWindow={true}>
                             {twitterFollowers && twitterFollowers.length > 0 && twitterFollowers.map((follower, index) =>
                                 <Follower follower={follower} index={index}/>)}
-                        </InfiniteScroll>
+                        </InfiniteScroll>}
                     </div>
                 </div>
             </div>

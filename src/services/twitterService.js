@@ -9,6 +9,10 @@ export const getFollowers = (accountName, cursor, isButtonEvent, callback) => {
     });
 };
 
+export const sortFollowers = (followers, sortByAccount) => {
+    return sortByAccount ? followers.sort(dynamicSort('name')) : followers.sort(dynamicSort('screen_name'));
+};
+
 const getUsersList = (users) => {
     if (users.length === 0) return [];
     else {
@@ -28,6 +32,19 @@ const extractUserObject = (user) => {
         followers_count: user.followers_count
     };
 };
+
+const dynamicSort = (property) => {
+    let sortOrder = 1;
+    if (property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a, b) {
+        let result = (a[property].toLowerCase() < b[property].toLowerCase()) ? -1 : (a[property].toLowerCase() > b[property].toLowerCase()) ? 1 : 0;
+        return result * sortOrder;
+    }
+};
+
 
 
 
