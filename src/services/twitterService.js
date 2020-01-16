@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-export const getFollowers = (accountName, cursor, callback) => {
+export const getFollowers = (accountName, cursor, isButtonEvent, callback) => {
     axios.get('http://localhost:8070?screen_name=' + accountName + '&cursor=' + cursor).then(res => {
         const users = res && res.data && res.data.users || [];
-        return callback(res.data.next_cursor, getUsersList(users));
+        return callback(res.data.next_cursor, getUsersList(users), isButtonEvent);
     }).catch(err => {
         console.log(err);
     });
