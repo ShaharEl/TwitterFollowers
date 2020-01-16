@@ -21,7 +21,7 @@ const FollowersContainer = (props) => {
                             loader={<div className="loader">Loading more items...</div>}
                             useWindow={true}>
                             {twitterFollowers && twitterFollowers.length > 0 && twitterFollowers.map((follower, index) =>
-                                <Follower follower={follower} index={index}/>)}
+                                <Follower follower={follower} key={index}/>)}
                         </InfiniteScroll>}
                     </div>
                 </div>

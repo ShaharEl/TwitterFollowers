@@ -21,16 +21,13 @@ const Home = (props) => {
         setCursor(next_cursor);
     };
 
-    const sortFollowers = (optionType) => {
-        let sortedFollowers = [];
+    const onSortClick = (optionType) => {
         switch (optionType) {
             case sortOptions.accountName:
-                sortedFollowers = sortFollowers(props.twitterFollowers, true);
-                props.addFollowers(sortedFollowers);
+                props.addFollowers(sortFollowers({followers: props.twitterFollowers, sortByAccount: true}));
                 break;
             case sortOptions.screenName:
-                sortedFollowers = sortFollowers(props.twitterFollowers, false);
-                props.addFollowers(sortedFollowers);
+                props.addFollowers(sortFollowers({followers: props.twitterFollowers, sortByAccount: false}));
                 break;
             default:
                 break;
@@ -50,7 +47,8 @@ const Home = (props) => {
                 <input type="text" placeholder="account name" onChange={(e) => setAccountName(e.target.value)}/>
                 <button type="button" onClick={() => searchFollowers(true)}>Search followers</button>
             </div>
-            <SelectDropDown options={sortOptions} onChange={sortFollowers}/>
+            {props.twitterFollowers && props.twitterFollowers.length > 0 &&
+            <SelectDropDown options={sortOptions} onChange={onSortClick}/>}
             <FollowersContainer loadMore={searchFollowers} cursor={cursor} twitterFollowers={props.twitterFollowers}/>
         </div>)
 };

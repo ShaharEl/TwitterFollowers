@@ -9,7 +9,7 @@ export const getFollowers = (accountName, cursor, isButtonEvent, callback) => {
     });
 };
 
-export const sortFollowers = (followers, sortByAccount) => {
+export const sortFollowers = ({followers, sortByAccount}) => {
     return sortByAccount ? followers.sort(dynamicSort('name')) : followers.sort(dynamicSort('screen_name'));
 };
 

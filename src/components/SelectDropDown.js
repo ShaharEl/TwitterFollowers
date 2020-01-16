@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './SelectDropDown.css'
 
 const SelectDropDown = (props) => {
 
@@ -11,11 +12,14 @@ const SelectDropDown = (props) => {
     };
 
     return (
-        <select id="selectDropDown" className="selectBox" onChange={handleChange} value={selectedOption}>
-            {Object.keys(options).map((option, index) => {
-                return <option key={index} name={option} value={options[option]}>{options[option]}</option>
-            })}
-        </select>
+        <div className="dropDown">
+            <h5>Sort Followers</h5>
+            <select id="selectDropDown" className="selectBox" onChange={handleChange} value={selectedOption}>
+                {Object.keys(options).map((option, index) => {
+                    return <option key={index} name={option} value={options[option]}>{options[option]}</option>
+                })}
+            </select>
+        </div>
     )
 };
 
