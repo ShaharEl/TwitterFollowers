@@ -1,11 +1,12 @@
 import axios from 'axios';
+import {dynamicSort} from './utils'
 
 export const getFollowers = (accountName, cursor, isButtonEvent, callback) => {
     axios.get('http://localhost:8070?screen_name=' + accountName + '&cursor=' + cursor).then(res => {
         const users = res && res.data && res.data.users || [];
         return callback(res.data.next_cursor, getUsersList(users), isButtonEvent);
     }).catch(err => {
-        console.log(err);
+        return {error: true, messageKey: 'serverError'};
     });
 };
 
@@ -31,18 +32,6 @@ const extractUserObject = (user) => {
         profile_img: user.profile_image_url,
         followers_count: user.followers_count
     };
-};
-
-const dynamicSort = (property) => {
-    let sortOrder = 1;
-    if (property[0] === "-") {
-        sortOrder = -1;
-        property = property.substr(1);
-    }
-    return function (a, b) {
-        let result = (a[property].toLowerCase() < b[property].toLowerCase()) ? -1 : (a[property].toLowerCase() > b[property].toLowerCase()) ? 1 : 0;
-        return result * sortOrder;
-    }
 };
 
 

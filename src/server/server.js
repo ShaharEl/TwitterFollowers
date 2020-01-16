@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     client.get('followers/list.json', params).then(data => {
         res.send(data);
     }).catch(e => {
-        console.log(e);
+        res.status(500).json({success: false, error: 'Sorry, error'});
     });
 });
 

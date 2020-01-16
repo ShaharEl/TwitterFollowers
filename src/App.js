@@ -7,8 +7,8 @@ class App extends React.Component{
 
     render() {
         return (
-            <div className="TwitterApp">
-                <h2>Welcome to my twitter app!</h2>
+            <div className="twitterApp">
+                <h2 className="mainHeader">Welcome to my twitter app!</h2>
                 <Home />
             </div>
         );

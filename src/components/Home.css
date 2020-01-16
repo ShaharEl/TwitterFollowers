@@ -1,0 +1,10 @@
+.errorLabel {
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+    color: red;
+}
+
+.input{
+    margin-right: 5px;
+}

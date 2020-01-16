@@ -6,19 +6,59 @@ import * as actions from "../store/actions/twitterActions"
 import connect from "react-redux/es/connect/connect";
 import FollowersContainer from './FollowersContainer'
 import SelectDropDown from '../components/SelectDropDown'
+import {sortOptions} from "../enums/sortOptions";
+import {isEmptyObject} from "../services/utils";
+import {errorMessages} from "../enums/errorMessages";
 
 const Home = (props) => {
 
     const [accountName, setAccountName] = useState('');
     const [cursor, setCursor] = useState(-1);
+    const [error, setError] = useState({
+        showError: false,
+        errorText: ''
+    });
+    const [loadingResults, setLoadingResults] = useState(false);
 
-    const searchFollowers = (isButtonEvent) => {
-        getFollowers(accountName, cursor, isButtonEvent, addFollowers);
+
+    const searchFollowers = async (isButtonEvent) => {
+        setLoadingResults(true);
+        if (isEmptyObject(accountName)) {
+            setError({
+                ...error,
+                showError: true,
+                errorText: errorMessages.emptyAccountName
+            });
+        } else {
+            setError({
+                ...error,
+                showError: false,
+                errorText: ''
+            });
+            const errorFromServer = await getFollowers(accountName, cursor, isButtonEvent, addFollowers);
+            if(errorFromServer && !isEmptyObject(errorFromServer.messageKey)){
+                setError({
+                    ...error,
+                    showError: true,
+                    errorText: errorMessages.serverError
+                });
+            }
+        }
+        setLoadingResults(false);
     };
 
     const addFollowers = (next_cursor, users, isButtonEvent) => {
-        isButtonEvent === true ? props.addFollowers(users) : props.updateFollowers(users);
-        setCursor(next_cursor);
+        if (!users || users.length === 0) {
+            setError({
+                ...error,
+                showError: true,
+                errorText: errorMessages.noResults
+            });
+        } else {
+            isButtonEvent === true ? props.addFollowers(users) : props.updateFollowers(users);
+            setCursor(next_cursor);
+        }
+        setLoadingResults(false);
     };
 
     const onSortClick = (optionType) => {
@@ -34,18 +74,15 @@ const Home = (props) => {
         }
     };
 
-    const sortOptions = {
-        sortBy: 'Sort By',
-        accountName: 'Account Name',
-        screenName: 'Screen Name'
-    };
-
     return (
         <div>
             <div>Please enter a name of a Twitter account</div>
             <div>
-                <input type="text" placeholder="account name" onChange={(e) => setAccountName(e.target.value)}/>
-                <button type="button" onClick={() => searchFollowers(true)}>Search followers</button>
+                <input type="text" className="input" placeholder="account name"
+                       onChange={(e) => setAccountName(e.target.value)}/>
+                <button disabled={loadingResults} type="button" onClick={() => searchFollowers(true)}>Search followers
+                </button>
+                <label className="errorLabel">{error.errorText}</label>
             </div>
             {props.twitterFollowers && props.twitterFollowers.length > 0 &&
             <SelectDropDown options={sortOptions} onChange={onSortClick}/>}
