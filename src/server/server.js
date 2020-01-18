@@ -25,8 +25,10 @@ app.get('/', (req, res) => {
     params.cursor = req.query.cursor;
     client.get('followers/list.json', params).then(data => {
         res.send(data);
-    }).catch(e => {
-        res.status(500).json({success: false, error: 'Sorry, error'});
+    }).catch(error => {
+        console.log(JSON.stringify(error));
+        const errorMessage = error && error[0] && error[0].message || 'Sorry, unexpected server error...';
+        res.status(500).json({success: false, error: errorMessage});
     });
 });
 

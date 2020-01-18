@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
-import {connect} from 'react-redux';
 import Home from './components/Home'
 
 class App extends React.Component{
-
     render() {
         return (
             <div className="twitterApp">
@@ -13,7 +11,6 @@ class App extends React.Component{
             </div>
         );
     }
-
 }
 
 export default App;

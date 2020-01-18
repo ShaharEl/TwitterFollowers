@@ -1,17 +1,16 @@
 import React from 'react';
 import {useState} from 'react';
-import {getFollowers, sortFollowers} from "../services/twitterService"
-import './Home.css'
-import * as actions from "../store/actions/twitterActions"
-import connect from "react-redux/es/connect/connect";
-import FollowersContainer from './FollowersContainer'
-import SelectDropDown from '../components/SelectDropDown'
+import {connect} from "react-redux";
+import {getFollowers, sortFollowers} from "../services/twitterService";
+import * as actions from "../store/actions/twitterActionsTypes";
+import FollowersContainer from './FollowersContainer';
+import SelectDropDown from '../components/SelectDropDown';
 import {sortOptions} from "../enums/sortOptions";
 import {isEmptyObject} from "../services/utils";
 import {errorMessages} from "../enums/errorMessages";
+import './Home.css';
 
 const Home = (props) => {
-
     const [accountName, setAccountName] = useState('');
     const [cursor, setCursor] = useState(-1);
     const [error, setError] = useState({
@@ -20,35 +19,45 @@ const Home = (props) => {
     });
     const [loadingResults, setLoadingResults] = useState(false);
 
-
-    const searchFollowers = async (isButtonEvent) => {
-        setLoadingResults(true);
+    const isValidAccountName = (accountName) => {
         if (isEmptyObject(accountName)) {
             setError({
                 ...error,
                 showError: true,
                 errorText: errorMessages.emptyAccountName
             });
+            return false;
         } else {
             setError({
                 ...error,
                 showError: false,
                 errorText: ''
             });
-            const errorFromServer = await getFollowers(accountName, cursor, isButtonEvent, addFollowers);
-            if(errorFromServer && !isEmptyObject(errorFromServer.messageKey)){
-                setError({
-                    ...error,
-                    showError: true,
-                    errorText: errorMessages.serverError
-                });
-            }
+            return true;
         }
-        setLoadingResults(false);
     };
 
-    const addFollowers = (next_cursor, users, isButtonEvent) => {
-        if (!users || users.length === 0) {
+    const updateFollowersOnScroll = async () => {
+        setLoadingResults(true);
+        getFollowers(accountName, cursor, false, addOrUpdateFollowersIntoStore);
+    };
+
+    const searchFollowers = async () => {
+        if (!isValidAccountName(accountName)) return;
+        setLoadingResults(true);
+        setCursor(-1);
+        getFollowers(accountName, cursor, true, addOrUpdateFollowersIntoStore);
+    };
+
+    const addOrUpdateFollowersIntoStore = (errorData, next_cursor, users, isButtonEvent) => {
+        if (errorData !== null) {
+            setError({
+                ...error,
+                showError: true,
+                errorText: errorData.messageKey
+            });
+            setLoadingResults(false);
+        } else if (!users || users.length === 0) {
             setError({
                 ...error,
                 showError: true,
@@ -76,17 +85,18 @@ const Home = (props) => {
 
     return (
         <div>
-            <div>Please enter a name of a Twitter account</div>
             <div>
-                <input type="text" className="input" placeholder="account name"
+                <input id="accountNameInput" type="text" className="input" placeholder="account name"
                        onChange={(e) => setAccountName(e.target.value)}/>
-                <button disabled={loadingResults} type="button" onClick={() => searchFollowers(true)}>Search followers
-                </button>
+                <button disabled={loadingResults} type="button" onClick={() => searchFollowers(true)}>Search followers</button>
                 <label className="errorLabel">{error.errorText}</label>
             </div>
             {props.twitterFollowers && props.twitterFollowers.length > 0 &&
-            <SelectDropDown options={sortOptions} onChange={onSortClick}/>}
-            <FollowersContainer loadMore={searchFollowers} cursor={cursor} twitterFollowers={props.twitterFollowers}/>
+            <>
+                <SelectDropDown options={sortOptions} onChange={onSortClick}/>
+                <FollowersContainer loadMore={updateFollowersOnScroll} cursor={cursor}
+                                    twitterFollowers={props.twitterFollowers}/>
+            </>}
         </div>)
 };
 
