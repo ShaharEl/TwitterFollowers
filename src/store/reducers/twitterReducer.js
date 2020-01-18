@@ -15,9 +15,6 @@ const reducer = (state = initState, action) => {
             return {
                 ...state, followers: updatedFollowers
             };
-        case Actions.CLEAR_FOLLOWERS:
-            const emptyFollowersObject = [];
-            return {followers: emptyFollowersObject};
         default:
             return state;
     }
