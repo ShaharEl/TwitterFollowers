@@ -1,11 +1,15 @@
 .follower {
-    width: 100px;
+    width: 190px;
     margin-right: 10px;
 }
 
 .col-lg-5 {
     max-width: 800px;
     flex: 1;
+}
+
+.list-group-item:first-child{
+    border-radius: 15px;
 }
 
 .followerWrapper {
