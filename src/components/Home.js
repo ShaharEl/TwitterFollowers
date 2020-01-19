@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {getFollowers, sortFollowers} from "../services/twitterService";
 import * as actions from "../store/actions/twitterActionsTypes";
 import FollowersContainer from './FollowersContainer';
-import SelectDropDown from '../components/SelectDropDown';
+import SelectDropDown from './generic/SelectDropDown';
 import {sortOptions} from "../enums/sortOptions";
 import {isEmptyObject} from "../services/utils";
 import {errorMessages} from "../enums/errorMessages";
@@ -39,35 +39,51 @@ const Home = (props) => {
 
     const updateFollowersOnScroll = async () => {
         setLoadingResults(true);
-        getFollowers(accountName, cursor, false, addOrUpdateFollowersIntoStore);
+        try {
+            const responseFromApi = await getFollowers(accountName, cursor, false);
+            await addOrUpdateFollowersIntoStore(responseFromApi.cursor, responseFromApi.users, responseFromApi.isButtonEvent);
+            setLoadingResults(false);
+        }
+        catch(err){
+            showError(err);
+            setLoadingResults(false);
+        }
     };
 
     const searchFollowers = async () => {
         if (!isValidAccountName(accountName)) return;
         setLoadingResults(true);
         setCursor(-1);
-        getFollowers(accountName, cursor, true, addOrUpdateFollowersIntoStore);
+        try {
+            const responseFromApi = await getFollowers(accountName, cursor, true);
+            await addOrUpdateFollowersIntoStore(responseFromApi.cursor, responseFromApi.users, responseFromApi.isButtonEvent);
+            setLoadingResults(false);
+        }
+        catch(err){
+            showError(err);
+            setLoadingResults(false);
+        }
     };
 
-    const addOrUpdateFollowersIntoStore = (errorData, next_cursor, users, isButtonEvent) => {
-        if (errorData !== null) {
-            setError({
-                ...error,
-                showError: true,
-                errorText: errorData.messageKey
-            });
-            setLoadingResults(false);
-        } else if (!users || users.length === 0) {
-            setError({
-                ...error,
-                showError: true,
-                errorText: errorMessages.noResults
-            });
-        } else {
-            isButtonEvent === true ? props.addFollowers(users) : props.updateFollowers(users);
-            setCursor(next_cursor);
-        }
-        setLoadingResults(false);
+    const showError = (errorObject) => {
+        setError({
+            ...error,
+            showError: true,
+            errorText: errorObject.messageKey
+        });
+    };
+
+
+    const addOrUpdateFollowersIntoStore = (next_cursor, users, isButtonEvent) => {
+        return new Promise((resolve, reject) => {
+            if (!users || users.length === 0) {
+                reject({error: true, messageKey: errorMessages.noResults});
+            } else {
+                isButtonEvent === true ? props.addFollowers(users) : props.updateFollowers(users);
+                setCursor(next_cursor);
+                resolve('success');
+            }
+        });
     };
 
     const onSortClick = (optionType) => {
@@ -93,9 +109,9 @@ const Home = (props) => {
             </div>
             {props.twitterFollowers && props.twitterFollowers.length > 0 &&
             <>
-                <SelectDropDown options={sortOptions} onChange={onSortClick}/>
+                <SelectDropDown title={'Sort Followers'} options={sortOptions} onChange={onSortClick}/>
                 <FollowersContainer loadMore={updateFollowersOnScroll} cursor={cursor}
-                                    twitterFollowers={props.twitterFollowers}/>
+                                    loadingResults={loadingResults} twitterFollowers={props.twitterFollowers}/>
             </>}
         </div>)
 };

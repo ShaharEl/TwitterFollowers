@@ -3,7 +3,7 @@ import './SelectDropDown.css'
 
 const SelectDropDown = (props) => {
 
-    const {options, onChange} = props;
+    const {options, onChange, title} = props;
     const [selectedOption, setSelectedOption] = useState('');
 
     const handleChange = (e) => {
@@ -13,7 +13,7 @@ const SelectDropDown = (props) => {
 
     return (
         <div className="dropDown">
-            <h5>Sort Followers</h5>
+            <h5>{title}</h5>
             <select id="selectDropDown" className="selectBox" onChange={handleChange} value={selectedOption}>
                 {Object.keys(options).map((option, index) => {
                     return <option key={index} name={option} value={options[option]}>{options[option]}</option>

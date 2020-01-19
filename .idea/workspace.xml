@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a576a1-ecb9-40d5-9d3c-d97b657acfd1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/hgfhgfhg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_tests_/utils.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/generic/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mytwitterapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mytwitterapp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Follower.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Follower.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_tests_/home.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_tests_/home.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Follower.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Follower.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FollowersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SelectDropDown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generic/SelectDropDown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SelectDropDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generic/SelectDropDown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/twitterService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/twitterService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/validationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generic/Loader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/twitterActionsTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/twitterActionsTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/twitterReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/twitterReducer.js" afterDir="false" />
     </list>
     <list id="6e27ce84-1831-4bed-9ab2-63169182b89a" name="json" comment="">
@@ -15,6 +27,113 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-753538254">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="js" value="36" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="JavaScript" value="36" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="js" value="1558" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="JavaScript" value="1558" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="78" column="47" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_tests_/utils.spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/generic/Loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Follower.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_tests_/home.spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/twitterService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -24,22 +143,140 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="scrolling" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/services/twitterService.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/SelectDropDown.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/twitterReducer.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/twitterActionsTypes.js" />
+        <option value="$PROJECT_DIR$/src/_tests_/utile.spec.js" />
+        <option value="$PROJECT_DIR$/src/services/utils.js" />
+        <option value="$PROJECT_DIR$/src/components/Follower.js" />
+        <option value="$PROJECT_DIR$/src/components/generic/Loader.js" />
+        <option value="$PROJECT_DIR$/src/components/FollowersContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/generic/Loader.css" />
+        <option value="$PROJECT_DIR$/src/_tests_/utils.spec.js" />
+        <option value="$PROJECT_DIR$/src/_tests_/home.spec.js" />
+        <option value="$PROJECT_DIR$/src/components/Home.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
   <component name="ProjectId" id="1WUJnepfDj8h7hJ9VTy55Vyeo8Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_tests_" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytwitterapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytwitterapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,7 +291,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:/dev/mytwitterapp/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -63,29 +300,67 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\mytwitterapp\src\components\generic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\mytwitterapp\src\components" />
       <recent name="C:\dev\mytwitterapp\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest. with no props">
-    <configuration name=" with no props" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.Sorting.Array should be sorted by name property">
+    <configuration name="Sorting (1)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/_tests_/home.spec.js" />
+      <test-file value="$PROJECT_DIR$/src/_tests_/utils.spec.js" />
       <test-names>
-        <test-name value=" with no props" />
+        <test-name value="Sorting" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testpage Component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Sorting" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/_tests_/utile.spec.js" />
+      <test-names>
+        <test-name value="Sorting" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sorting.Array should be sorted by name property" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/_tests_/utils.spec.js" />
+      <test-names>
+        <test-name value="Sorting" />
+        <test-name value="Array should be sorted by name property" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Testpage Component (1)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
@@ -95,49 +370,29 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testpage Component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="hhh.spec.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/_tests_/hhh.js" />
-      <test-names>
-        <test-name value="Testpage Component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;Home /&gt; with no props" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/_tests_/home.spec.js" />
-      <test-names>
-        <test-name value="&lt;Home /&gt; with no props" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="hhh.spec.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/src/_tests_/hhh.spec.js" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Jest.Testpage Component (1)" />
+      <item itemvalue="Jest.hhh.spec.js" />
+      <item itemvalue="Jest.Sorting" />
+      <item itemvalue="Jest.Sorting (1)" />
+      <item itemvalue="Jest.Sorting.Array should be sorted by name property" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Testpage Component (1)" />
-        <item itemvalue="Jest.Testpage Component" />
+        <item itemvalue="Jest.Sorting.Array should be sorted by name property" />
+        <item itemvalue="Jest.Sorting (1)" />
+        <item itemvalue="Jest.Sorting" />
         <item itemvalue="Jest.hhh.spec.js" />
-        <item itemvalue="Jest.&lt;Home /&gt; with no props" />
-        <item itemvalue="Jest. with no props" />
+        <item itemvalue="Jest.Testpage Component (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +460,23 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Sorting - 2020.01.19 at 11h 49m 17s.xml">
+      <configuration name="Sorting" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Sorting - 2020.01.19 at 11h 52m 20s.xml">
+      <configuration name="Sorting" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Sorting_(1) - 2020.01.19 at 12h 04m 25s.xml">
+      <configuration name="Sorting (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Sorting_Array_should_be_sorted_by_name_property - 2020.01.19 at 12h 04m 39s.xml">
+      <configuration name="Sorting.Array should be sorted by name property" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14903000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -213,6 +485,51 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15700738" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.49841937" weight="0.20801733" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49841017" visible="true" weight="0.23726977" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50105375" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.42145178" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="npm" order="0" side_tool="true" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15700738" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49894625" visible="true" weight="0.3391116" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50105375" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.42145178" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -226,109 +543,228 @@
     <option name="LAST_COMMIT_MESSAGE" value="add testing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="327" y="51" key="#_with_no_props.should_have_an_input_field" timestamp="1579295525089">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="327" y="51" key="#_with_no_props.should_have_an_input_field/0.0.1280.680@0.0.1280.680" timestamp="1579295525089" />
-    <state x="371" y="124" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1579291635384">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="124" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1280.680@0.0.1280.680" timestamp="1579291635384" />
-    <state x="258" y="0" key="CommitChangelistDialog2" timestamp="1579338535196">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579338535196" />
-    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog" timestamp="1579338520515">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1579338520515" />
-    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1579335415693">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579335415693" />
-    <state width="1259" height="78" key="GridCell.Tab.0.bottom" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.0.center" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.0.left" timestamp="1579339198572">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579339198572" />
-    <state width="1259" height="78" key="GridCell.Tab.0.right" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.1.bottom" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.1.center" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.1.left" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.1.right" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.2.bottom" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.2.center" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.2.left" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.2.right" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.3.bottom" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.3.center" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.3.left" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state width="1259" height="78" key="GridCell.Tab.3.right" timestamp="1579339198573">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1259" height="78" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1579339198573" />
-    <state x="144" y="0" key="SettingsEditor" timestamp="1579291713358">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1579291713358" />
-    <state x="490" y="263" key="VCS.ChangelistChooser" timestamp="1579202342155">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="490" y="263" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1579202342155" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1579338544754">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579338544754" />
-    <state x="345" y="96" width="591" height="488" key="find.popup" timestamp="1579293695965">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="345" y="96" width="591" height="488" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1579293695965" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1579293699377">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1579293699377" />
+    <state x="327" y="51" key="#_with_no_props.should_have_an_input_field" />
+    <state x="327" y="51" key="#_with_no_props.should_have_an_input_field/0.0.1280.680@0.0.1280.680" />
+    <state x="371" y="124" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" />
+    <state x="371" y="124" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1280.680@0.0.1280.680" />
+    <state x="258" y="0" key="CommitChangelistDialog2" />
+    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" />
+    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog" />
+    <state x="93" y="93" width="1095" height="495" maximized="true" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" />
+    <state x="421" y="99" key="FileChooserDialogImpl" />
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.0.bottom" />
+    <state width="1259" height="78" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.0.center" />
+    <state width="1259" height="78" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.0.left" />
+    <state width="1259" height="78" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.0.right" />
+    <state width="1259" height="78" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.1.bottom" />
+    <state width="1259" height="78" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.1.center" />
+    <state width="1259" height="78" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.1.left" />
+    <state width="1259" height="78" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.1.right" />
+    <state width="1259" height="78" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.2.bottom" />
+    <state width="1259" height="78" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.2.center" />
+    <state width="1259" height="78" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.2.left" />
+    <state width="1259" height="78" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.2.right" />
+    <state width="1259" height="78" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.3.bottom" />
+    <state width="1259" height="78" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.3.center" />
+    <state width="1259" height="78" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.3.left" />
+    <state width="1259" height="78" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" />
+    <state width="1259" height="78" key="GridCell.Tab.3.right" />
+    <state width="1259" height="78" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" />
+    <state x="144" y="0" key="SettingsEditor" />
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" />
+    <state x="490" y="263" key="VCS.ChangelistChooser" />
+    <state x="490" y="263" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" />
+    <state x="345" y="96" width="591" height="488" key="find.popup" />
+    <state x="345" y="96" width="591" height="488" key="find.popup/0.0.1280.680@0.0.1280.680" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/generic/SelectDropDown.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/validationService.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enums/sortOptions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-infinite-scroller/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/generic/SelectDropDown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="14" lean-forward="true" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/twitterActionsTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/twitterReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enums/errorMessages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Follower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/generic/Loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/generic/Loader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FollowersContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_tests_/utils.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_tests_/home.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/twitterService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="78" column="47" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

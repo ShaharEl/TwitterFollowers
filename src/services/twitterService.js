@@ -1,12 +1,19 @@
 import axios from 'axios';
 import {dynamicSort} from './utils'
 
-export const getFollowers = (accountName, cursor, isButtonEvent, callback) => {
-    axios.get('http://localhost:8070?screen_name=' + accountName + '&cursor=' + cursor).then(res => {
-        const users = res && res.data && res.data.users || [];
-        return callback(null, res.data.next_cursor, getUsersList(users), isButtonEvent);
-    }).catch(err => {
-        return callback({error: true, messageKey: err.response.data.error});
+export const getFollowers = (accountName, cursor, isButtonEvent) => {
+    return new Promise((resolve, reject) => {
+        axios.get('http://localhost:8070?screen_name=' + accountName + '&cursor=' + cursor).then(res => {
+            const users = res && res.data && res.data.users || [];
+            const response = {
+                users: getUsersList(users),
+                cursor: res.data.next_cursor,
+                isButtonEvent
+            };
+            resolve(response);
+        }).catch(err => {
+            reject({error: true, messageKey: err.response.data.error});
+        });
     });
 };
 
@@ -26,6 +33,7 @@ const getUsersList = (users) => {
 
 const extractUserObject = (user) => {
     return {
+        id: user.id,
         name: user.name,
         location: user.location,
         screen_name: user.screen_name,

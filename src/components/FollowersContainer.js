@@ -1,6 +1,7 @@
 import React from "react";
 import InfiniteScroll from "react-infinite-scroller";
 import Follower from "./Follower";
+import Loader from "../components/generic/Loader"
 
 const FollowersContainer = (props) => {
 
@@ -10,7 +11,7 @@ const FollowersContainer = (props) => {
         <div id="followersContainer" className="container">
             <div className="row">
                 <div className="col-12 col-sm-8 col-lg-5">
-                    <div className="list-group">
+                    <ul className="list-group">
                         {twitterFollowers && twitterFollowers.length > 0 &&
                         <InfiniteScroll
                             initialLoad={false}
@@ -18,11 +19,13 @@ const FollowersContainer = (props) => {
                             pageStart={0}
                             loadMore={loadMore}
                             hasMore={cursor !== 0 && !loadingResults}
-                            loader={<div className="loader">Loading more items...</div>}>
-                            {twitterFollowers && twitterFollowers.length > 0 && twitterFollowers.map((follower, index) =>
-                                <Follower follower={follower} key={index}/>)}
+                            loader={<Loader key={1}/>}>
+                            {twitterFollowers.map((follower) => {
+                                return <Follower key={follower.id.toString()} follower={follower}/>
+                            })}
                         </InfiniteScroll>}
-                    </div>
+                    </ul>
+                    <Loader/>
                 </div>
             </div>
         </div>)

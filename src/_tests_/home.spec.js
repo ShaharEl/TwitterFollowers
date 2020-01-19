@@ -1,16 +1,15 @@
 import React from 'react';
-import {shallow, mount} from 'enzyme';
+import {mount} from 'enzyme';
 import {Provider} from "react-redux";
 import configureMockStore from "redux-mock-store";
 import Home from '../components/Home';
-import * as Actions from '../store/actions/twitterActionsTypes'
 
 const mockStore = configureMockStore();
 const store = mockStore({
     followers: []
 });
 
-describe(' with no props', () => {
+describe(' Home component elements rendering', () => {
     const container = mount(
         <Provider store={store}>
             <Home/>
